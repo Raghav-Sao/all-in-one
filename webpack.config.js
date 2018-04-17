@@ -33,19 +33,19 @@ module.exports = {
       //     },
       //   ],
       // }, will use once convert all function in es6 module
-      // {
-      //   test: /\.(jpg|jpeg|png)$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[ext]',
-      //         outputPath: 'img/',
-      //         publicPath: 'img/',
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.(jpg|jpeg|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              publicPath: 'img/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
